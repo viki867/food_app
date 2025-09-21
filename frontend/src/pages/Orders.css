@@ -1,0 +1,116 @@
+
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+.orders-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.empty-orders {
+  text-align: center;
+  color: #000000;
+  background: rgba(255, 87, 34, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease;
+}
+
+.order-card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.8s ease;
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+}
+
+.order-card h4 {
+  margin-bottom: 10px;
+  color: #ff5722;
+  font-size: 18px;
+}
+
+.order-card p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.order-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+  color: black;
+}
+
+.order-card li {
+  background: #d5d0d0;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .orders-container {
+    margin: 50px 15px;
+    padding: 15px;
+  }
+
+  .orders-title {
+    font-size: 24px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.download-btn {
+  padding: 15px 30px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+ font-size: 23px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.download-btn:hover {
+  background: #e64a19;
+}

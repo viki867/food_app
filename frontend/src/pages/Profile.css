@@ -1,0 +1,97 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 20px;
+}
+
+.profile-box {
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff5722;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.profile-box label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.profile-box input,
+.profile-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.profile-box input:focus,
+.profile-box textarea:focus {
+  outline: none;
+  border-color: #ff5722;
+  box-shadow: 0 0 8px rgba(255, 87, 34, 0.5);
+}
+
+.profile-btns {
+  text-align: center;
+}
+
+.save-btn,
+.edit-btn {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.save-btn:hover,
+.edit-btn:hover {
+  background: linear-gradient(90deg, #e64a19, #f57c00);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .profile-box {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 24px;
+  }
+}
